@@ -1530,7 +1530,7 @@ config("toolchain") {
       # Google3 enables this warning, so we should also enable it to find issue
       # earlier. See https://reviews.llvm.org/D56731 for details about this
       # warning.
-      cflags += [ "-Wctad-maybe-unsupported" ]
+      # cflags += [ "-Wctad-maybe-unsupported" ]
     }
   }
 
