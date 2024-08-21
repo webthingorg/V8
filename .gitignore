@@ -40,8 +40,6 @@
 .torquelint-cache
 .vscode
 /_*
-/base
-/build
 /buildtools
 /check-header-includes
 /Default/
@@ -63,6 +61,10 @@
 /test/wasm-spec-tests/tests
 /test/wasm-spec-tests/tests.tar.gz
 /third_party/*
+!/third_party/abseil-cpp
+!/third_party/icu
+!/third_party/fp16
+!/third_party/zlib
 !/third_party/antlr4
 !/third_party/colorama
 /third_party/colorama/src
