@@ -1,0 +1,16 @@
+import("//build/config/linux/pkg_config.gni")
+
+group("absl") {
+  public_deps = [ ":absl_source" ]
+}
+
+config("absl_define_config") {}
+config("absl_include_config") {}
+
+pkg_config("system_absl") {
+  packages = [ "absl_base", "absl_hash", "absl_raw_hash_set" ]
+}
+
+source_set("absl_source") {
+  public_configs = [ ":system_absl" ]
+}
